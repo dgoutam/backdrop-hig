@@ -1,9 +1,9 @@
 ---
 layout: hig
-title: Quick Start
-menu_title: Design Essentials
-id: 42
-parent_id : 41
+title: Qucik Start
+menu_title: Interface Elements 
+id: 22
+parent_id : 21
 group: essentials
 ---
 

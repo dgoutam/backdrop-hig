@@ -28,7 +28,7 @@
 						<li class="dropdown">
 				  			<a class="dropdown-toggle  {% if node.url == page.url %} active{% endif %}" 
 				  			   href="#"  data-toggle="dropdown"> 
-				  				{{ node.title }} <span class="caret"></span>
+				  				{{ node.menu_title }} <span class="caret"></span>
 				  			</a>
 				  				<ul class="dropdown-menu" role="menu">
 				  					{% assign child_pages  = site.pages | sort: 'parent_id' %}

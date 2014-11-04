@@ -1,5 +1,5 @@
-<div id="accordian">
-    <ul>
+<div>
+    <ul id="accordian">
 
         {% assign sorted_pages = site.pages | sort: 'parent_id' | reverse  %}
 
@@ -9,10 +9,9 @@
         {% if node.navigation == true  && node.parent_id == 0 %}
         {% if node.haschild == true %}
         <li>
-            <h3 class="dropdown-toggle  {% if node.url == page.url %} active{% endif %}"
-               href="#"  data-toggle="dropdown">
-                {{ node.title }} <span class="caret"></span>
-            </h3>
+            <a class="accordian-title" href="#">
+                {{ node.menu_title }} <span class="glyphicon arrow"></span>
+            </a>
             <ul>
                 {% assign child_pages  = site.pages | sort: 'parent_id' %}
                 {% for child in child_pages %}
@@ -27,11 +26,13 @@
             </ul>
         </li>
         {% else %}
+        <!--
         <li>
             <a {% if node.url == page.url %}class="active"{% endif %} href="{{ node.url }}">
             {{ node.title }}
             </a>
         </li>
+        -->
         {% endif %}
         {% endif %}
         {% endfor %}

@@ -2,10 +2,14 @@
 layout: default
 ---
 <article class="page">
-  <h2 class="page-title">{{ page.title }} - {{ page.id }}</h2>
+	<div class="row">
+		<div class="col-md-12  col-sm-12 col-xs-12 page-title">
+			<h3>{{ page.menu_title }} / {{ page.title }}</h3>
+		</div>
+	</div>
   <div class="row">
-  	<div class="col-md-3"> {% include sub-nav.html %}</div>
-  	<div class="col-md-9">	
+  	<div class="col-md-3 hidden-xs hidden-sm"> {% include sub-nav.html %}</div>
+  	<div class="col-xs-12 col-sm-12 col-md-9 page-content">	
   		{{ content }}
   	</div>
   </div>

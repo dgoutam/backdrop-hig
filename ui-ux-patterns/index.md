@@ -1,6 +1,7 @@
 ---
 layout: hig
-title: UI/UX Patterns
+title: Overview
+menu_title: UI/UX Patterns 
 id: 31
 parent_id: 1
 navigation: true

@@ -1,6 +1,7 @@
 ---
 layout: hig
 title: Quick Start
+menu_title: UI/UX Patterns
 id: 32
 parent_id : 31
 group: uiux
