@@ -20,7 +20,7 @@
                 {% if node.menu_title == 'Interface Elements' %}
                 <i class="fa fa-sliders"></i>
                 {% endif %}
-                {{ node.menu_title }}
+                &nbsp;{{ node.menu_title }}
             </a>
             <ul>
                 {% assign child_pages  = site.pages | sort: 'parent_id' %}

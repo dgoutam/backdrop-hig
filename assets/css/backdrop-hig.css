@@ -22,7 +22,7 @@
 .hero h1 {
 	font-size: 600%;
 	margin:50px;
-	font-family:Federo;
+	
 }
 .hero p {
 
@@ -55,12 +55,23 @@
 #accordian{
 	color: #797979;
 	top:120px;
+	margin-left:0;
+	padding-left:0;
+    line-height: 200%;
 }
-#accordian, li {
+#accordian li {
 	color: #797979;
 	list-style-type: none;
 	text-decoration: none;
-	margin-left:0;
+	margin-left:5px;
+	padding-left:0;
+    line-height: 200%;
+}
+#accordian li ul {
+	color: #797979;
+	list-style-type: none;
+	text-decoration: none;
+	margin-left:20px;
 	padding-left:0;
     line-height: 200%;
 }
@@ -82,7 +93,7 @@
     display:block;
     border-bottom: 1px dotted #e8e6e5;
     margin-bottom: 5px;
-    margin-left:5px;
+    margin-left:0;
 }
 .accordian-title:hover {
 	color: #797979; 
@@ -123,7 +134,8 @@ article {
     background-color: #fbfbfb;
     border: 1px solid #e8e6e5;
     padding:10px;
-    min-width:250px;
+    min-width:220px;
+
 }
 
 .row div {
