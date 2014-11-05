@@ -2,15 +2,26 @@
 layout: default
 ---
 <article class="page">
-	<div class="row">
-		<div class="col-md-12  col-sm-12 col-xs-12 page-title">
-			<h3>{{ page.menu_title }} / {{ page.title }}</h3>
-		</div>
-	</div>
-  <div class="row">
-  	<div class="col-md-3 hidden-xs hidden-sm"> {% include sub-nav.html %}</div>
-  	<div class="col-xs-12 col-sm-12 col-md-9 page-content">	
-  		{{ content }}
-  	</div>
-  </div>
+	<div class="navbar-fixed-top page-title container">
+        <div class="row">
+            <div class="col-md-12  col-sm-12 col-xs-12">
+                <div class="">
+                    <h3>{{ page.menu_title }} / {{ page.title }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col-md-3 hidden-xs hidden-sm">
+            <div class="sub-nav-box">
+                {% include sub-nav.html %}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 page-content">
+            {{ content }}
+        </div>
+
+    <div>
 </article>

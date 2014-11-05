@@ -9,8 +9,18 @@
         {% if node.navigation == true  && node.parent_id == 0 %}
         {% if node.haschild == true %}
         <li>
+
             <a class="accordian-title" href="#">
-                {{ node.menu_title }} <span class="glyphicon arrow"></span>
+                {% if node.menu_title == 'Design Essentials' %}
+                <i class="fa fa-file-o"></i>
+                {% endif %}
+                {% if node.menu_title == 'UI/UX Patterns' %}
+                <i class="fa fa-list-alt"></i>
+                {% endif %}
+                {% if node.menu_title == 'Interface Elements' %}
+                <i class="fa fa-sliders"></i>
+                {% endif %}
+                {{ node.menu_title }}
             </a>
             <ul>
                 {% assign child_pages  = site.pages | sort: 'parent_id' %}

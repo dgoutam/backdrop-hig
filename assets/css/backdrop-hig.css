@@ -54,9 +54,6 @@
 }
 #accordian{
 	color: #797979;
-	font-size:110%;
-
-	position:fixed;
 	top:120px;
 }
 #accordian, li {
@@ -65,6 +62,7 @@
 	text-decoration: none;
 	margin-left:0;
 	padding-left:0;
+    line-height: 200%;
 }
 #accordian li a {
 	color: #797979;
@@ -80,6 +78,11 @@
 .accordian-title  {
 	color: #797979;
 	text-decoration: none;
+    font-size: 120%;
+    display:block;
+    border-bottom: 1px dotted #e8e6e5;
+    margin-bottom: 5px;
+    margin-left:5px;
 }
 .accordian-title:hover {
 	color: #797979; 
@@ -87,7 +90,6 @@
 }
 
 .page-title {
-	position:fixed;
 	top:55px;
 	clear:both;
 	z-index: 120;
@@ -106,6 +108,29 @@
 
 #accordian li a.active {
 	color: #000;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+article {
+    position: relative;
+}
+.sub-nav-box {
+    position: fixed;
+    top:120px;
+    color:#797979;
+    background-color: #fbfbfb;
+    border: 1px solid #e8e6e5;
+    padding:10px;
+    min-width:250px;
+}
+
+.row div {
+
+}
+.page {
+    position: relative;
 }
 /*
 img {
