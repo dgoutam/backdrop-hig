@@ -10,28 +10,37 @@ haschild : true
 
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+# UI /UX Patterns
 
-There are currently two themes built on Poole:
+> ...a problem which occurs over and over again in our environment, and then de- scribes the core of the solution to that problem...
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+We at backdrop try to document the *Interaction design patterns* which are a way to describe solutions to common usability or accessibility problems in a specific context and used in backdrop core. They document interaction models that make it easier for users to understand an interface and accomplish their tasks or goal.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
 
-## Setup
+# Elements of an interaction design pattern
 
-Some fun facts about the setup of this project include:
+We at backdrop organize the common elements to describe the UI/ UX patterns with the following elements:
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+* **Pattern Name** - Choosing a clear and descriptive name helps people find the pattern and encourages clear communication between team members during design discussions.
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+* **Pattern Description** -  Because short names like "one-window drilldown" are sometimes not sufficient to describe the pattern, a few additional lines of explanation (or a canonical screenshot) will help explain how the pattern works.
 
-Thanks for reading!
+* **Problem Statement** -  Written in user-centered language, this communicates what the user wants to achieve or what the challenge is to the end-user.
+
+* **Use When** -  "Context of use" is a critical component of the design pattern. This element helps people understand situations when the design pattern applies (and when it does not.)
+
+* **Solution** -  The solution should explain "how" to solve the problem, and may include prescriptive checklists, screenshots, or even short videos demonstrating the pattern in action.
+
+* **Rationale** -  Providing reasons "why" the pattern works will reinforce the solution, though time-pressed developers may prefer to ignore this explanation.
+
+* **Examples** - Each example shows how the pattern has been successfully applied This is often accompanied by a screenshot and a short description.
+
+# Categorization
+
+We at backdrop categorized the patterns used throughout the backdrop as follows:
+
+* **User Input**
+* **Playing with Data**
+* **Navigation**
+* **Miscellaneous** 

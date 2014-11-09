@@ -1,4 +1,4 @@
-{% capture html %}
+{% capture nav %}
 <ul>
     {% if include.context == "/" %}
         <li class="{% if page.url == "/" %}active{% endif %}">
@@ -13,14 +13,12 @@
         {% capture current %}{{ entry.url | remove: slug | remove: "//" | append: "/" }}{% endcapture %}
  
         {% if current == include.context %}
-			 {% if page.navigation %}
-				<li class="{% if page.url contains entry.url %}active{% endif %}">
-					<a href="{{ site.url }}{{ entry.url }}">{{ entry.title }}</a>
-					{% include tree.html context=entry.url %}
-				</li>
-			{% endif %}
+            <li class="{% if page.url contains entry.url %}active{% endif %}">
+                <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+                {% include tree.html context=entry.url %}
+            </li>
         {% endif %}
  
     {% endfor %}
 </ul>
-{% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}
+{% endcapture %}{{ nav | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}

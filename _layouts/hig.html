@@ -5,9 +5,10 @@ layout: default
 	<div class="navbar-fixed-top page-title container">
         <div class="row">
             <div class="col-md-12  col-sm-12 col-xs-12">
-                <div class="">
-                    <h3>{{ page.menu_title }} &raquo; {{ page.title }}</h3>
-                </div>
+                <div>
+                    <!--<h3>{{ page.menu_title }} &raquo; {{ page.title }}</h3>-->
+                    {% include breadcrumb.html %}
+                </div> 
             </div>
         </div>
     </div>
@@ -16,7 +17,7 @@ layout: default
       <div class="row">
         <div class="col-md-3 hidden-xs hidden-sm">
             <div class="sub-nav-box">
-                {% include sub-nav.html %}
+               {% include sub-nav.html parent=1 %}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-9 page-content">

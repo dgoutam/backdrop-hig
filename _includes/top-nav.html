@@ -1,5 +1,5 @@
 {% capture html %}
-    <ul>
+    <ul class="dropdown-menu" role="menu">
         
         {% assign sorted_pages = site.pages | sort: 'parent_id' | reverse  %}
                 
@@ -7,21 +7,11 @@
            {% capture current %}{{ node.parent_id }}{% endcapture %}
            {% if node.parent_id == include.parent %}
                 {% if node.haschild %}
-                    <li class="accordian-title">
-                        <a {% if node.url == page.url %}class="active"{% endif %} href="{{node.url}}">
-                        {% if node.menu_title == 'Design Essentials' %}
-                            <i class="fa fa-file-o"></i>
-                        {% endif %}
-                        {% if node.menu_title == 'UI/UX Patterns' %}
-                            <i class="fa fa-list-alt"></i>
-                        {% endif %}
-                        {% if node.menu_title == 'Interface Elements' %}
-                            <i class="fa fa-sliders"></i>
-                        {% endif %}
-                        
-                        &nbsp;{{ node.menu_title }}
+                    <li lass="dropdown">
+                        <a class="dropdown-toggle  {% if node.url == page.url %} active{% endif %}"  {% if node.url == page.url %}class="active"{% endif %} href="{{node.url}}"  data-toggle="dropdown">
+                        {{ node.menu_title }} <span class="caret"></span>
                         </a>
-                        {% include sub-nav.html parent=node.id %}
+                        {% include top-nav.html parent=node.id %}
                     </li>
                  {% else %}
                     <li>

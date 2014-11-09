@@ -4,6 +4,7 @@ title: Qucik Start
 menu_title: Interface Elements 
 id: 22
 parent_id : 21
+navigation: false
 group: essentials
 ---
 

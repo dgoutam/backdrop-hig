@@ -4,6 +4,7 @@ title: Quick Start
 menu_title: Design Essentials
 id: 42
 parent_id : 41
+navigation: false
 group: essentials
 ---
 

@@ -52,13 +52,7 @@
 	margin-top:20px;
 	font-size:120%;
 }
-#accordian{
-	color: #797979;
-	top:120px;
-	margin-left:0;
-	padding-left:0;
-    line-height: 200%;
-}
+/*
 #accordian li {
 	color: #797979;
 	list-style-type: none;
@@ -85,41 +79,23 @@
 #accordian li a:hover {
 	color: #797979;
 }
+*/
 
-.accordian-title  {
-	color: #797979;
-	text-decoration: none;
-    font-size: 120%;
-    display:block;
-    border-bottom: 1px dotted #e8e6e5;
-    margin-bottom: 5px;
-    margin-left:0;
-}
-.accordian-title:hover {
-	color: #797979; 
-	text-decoration: none;
-}
 
 .page-title {
-	top:55px;
+	position: fixed;
+	top:60px;
 	clear:both;
 	z-index: 120;
 	background-color: #fff;
+	height: 50px;
 }
 
-.page-title h3 {
-	color:#27ace2;
-	font-size: 100%;
-	font-weight: normal;
-}
 
 .page-content {
 	margin-top: 40px;
 }
 
-#accordian li a.active {
-	color: #000;
-}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -136,6 +112,85 @@ article {
     padding:10px;
     min-width:220px;
 
+}
+.breadcrumb {
+	margin-top: 10px;
+	background-color: white;
+}
+/*
+.sub-nav-box >ul{
+	list-style-type: none;
+	top:120px;
+	margin-left:0;
+	padding-left:0;
+    line-height: 200%;
+}
+
+.sub-nav-box >ul>li>a {
+	color: #797979;
+	text-decoration: none;
+    font-size: 100%;
+    display:block;
+    border-bottom: 1px dotted #e8e6e5;
+    margin-bottom: 5px;
+    margin-left:0;
+}
+.sub-nav-box >ul>li>a:hover {
+	color: #27ace2;
+	text-decoration: none;
+}
+
+.sub-nav-box >ul>li>ul { 
+	list-style-type: none;
+	margin-left:18px;
+	padding-left:0;
+    line-height: 200%;
+}
+*/
+.sub-nav-box ul {
+	list-style-type: none;
+	top:120px;
+	margin-left:0;
+	padding-left:0;
+    line-height: 200%;
+}
+.sub-nav-box ul li {
+	list-style-type: none;
+	margin-left:10px;
+}
+
+.sub-nav-box ul li ul li {
+	list-style-type: none;
+	margin-left:23px;
+}
+
+.sub-nav-box ul li ul li ul li{
+	list-style-type: none;
+	margin-left:23px;
+}
+
+.accordian-title a{
+	color: #797979;
+	text-decoration: none;
+    font-size: 100%;
+    display:block;
+    border-bottom: 1px dotted #e8e6e5;
+    margin-bottom: 5px;
+    margin-left:0;
+}
+.accordian-title a i {
+	margin-right:7px;
+}
+
+li>a {
+		color: #797979;
+}
+li>a:hover {
+	color: #27ace2;
+	text-decoration: none;
+}
+a.active {
+	font-weight: bold;
 }
 
 .row div {
