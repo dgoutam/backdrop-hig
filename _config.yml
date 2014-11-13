@@ -4,17 +4,17 @@ relative_permalinks: true
 
 # Setup
 title:            Backdrop HIG Home
-tagline:          The Jekyll Butler
-url:              http://localhost:4000
+tagline:          Human Interface Guide for backdrop cms
+url:              http(s)://dgoutam.github.io/
 paginate:         1
-baseurl:          /
+baseurl:          /backdrop-hig
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Goutam Dey
+  url:            https://twitter.com/dgoutam
+  email:          dgoutam@gmail.com
 
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/dgoutam/backdrop-hig
 highlighter: rouge

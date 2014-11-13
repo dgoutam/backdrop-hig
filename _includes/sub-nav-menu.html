@@ -7,7 +7,7 @@
 
                                 {% if node.id == include.parent %}
                                     <li>
-                                        <a href="{{node.url}}">
+                                        <a href="{{include.baseurl}}{{node.url}}">
                                         &nbsp;<span class="title">{{ node.title }}</span>
                                         </a>
                                     </li>
@@ -16,7 +16,7 @@
                                {% if node.parent_id == include.parent %}
                                     {% if node.haschild %}
                                         <li>
-                                            <a {% if node.url == page.url %}class="active"{% endif %} href="{{node.url}}">
+                                            <a {% if node.url == page.url %}class="active"{% endif %} href="{{include.baseurl}}{{node.url}}">
                                             {% if node.menu_title == 'Design Essentials' %}
                                                 <i class="fa fa-file-o"></i>
                                             {% endif %}
@@ -29,11 +29,11 @@
                                             
                                             &nbsp;<span class="title">{{ node.menu_title }}</span>
                                             </a>
-                                            {% include sub-nav-menu.html parent=node.id %}
+                                            {% include sub-nav-menu.html parent=node.id baseurl=include.baseurl %}
                                         </li>
                                      {% else %}
                                         <li>
-                                            <a {% if node.url == page.url %}class="active"{% endif %} href="{{node.url}}"><span class="title">
+                                            <a {% if node.url == page.url %}class="active"{% endif %} href="{{include.baseurl}}{{node.url}}"><span class="title">
                                             {{node.title}}
                                             </span>
                                             </a>
